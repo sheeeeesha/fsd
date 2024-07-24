@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="calculatorimg.png" type="image/x-icon">
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Ashish's Calculator :)</h1>
+    </div>
+    
+    <section class="flex items-center justify-center">
+        <div class="flex big-cal-box">
+            <div class="flex upper-rectangle justify-center">
+                <input type="text" id="result" class="input-box" readonly >
+            </div>
+            
+            <div class="lower-rectangle">
+                <button class="big-b" onclick="toggleRadDec()">Rad | Dec</button>
+                <button class="small-b" onclick="appendOperator('!')">x!</button>
+                <button class="small-b" onclick="appendOperator('(')">(</button>
+                <button class="small-b" onclick="appendOperator(')')">)</button>
+                <button class="small-b" onclick="appendOperator('%')">%</button>
+                <button class="small-b" onclick="clearEntry()">CE</button>
+                <button class="small-b" onclick="appendOperator('1/')">inv</button>
+                <button class="small-b" onclick="appendOperator('sin(')">Sin</button>
+                <button class="small-b" onclick="appendOperator('ln(')">ln</button>
+                <button class="small-b" onclick="appendOperator('7')">7</button>
+                <button class="small-b" onclick="appendOperator('8')">8</button>
+                <button class="small-b" onclick="appendOperator('9')">9</button>
+                <button class="small-b" onclick="appendOperator('/')">/</button>
+                <button class="small-b" onclick="appendOperator('pi')">π</button>
+                <button class="small-b" onclick="appendOperator('cos(')">cos</button>
+                <button class="small-b" onclick="appendOperator('log(')">log</button>
+                <button class="small-b" onclick="appendOperator('4')">4</button>
+                <button class="small-b" onclick="appendOperator('5')">5</button>
+                <button class="small-b" onclick="appendOperator('6')">6</button>
+                <button class="small-b" onclick="appendOperator('*')">*</button>
+                <button class="small-b" onclick="appendOperator('e')">e</button>
+                <button class="small-b" onclick="appendOperator('tan(')">tan</button>
+                <button class="small-b" onclick="appendOperator('sqrt(')">√</button>
+                <button class="small-b" onclick="appendOperator('1')">1</button>
+                <button class="small-b" onclick="appendOperator('2')">2</button>
+                <button class="small-b" onclick="appendOperator('3')">3</button>
+                <button class="small-b" onclick="appendOperator('-')">-</button>
+                <button class="small-b" onclick="appendOperator('Ans')">Ans</button>
+                <button class="small-b" onclick="appendOperator('E')">EXP</button>
+                <button class="small-b" onclick="appendOperator('^')">x^y</button>
+                <button class="small-b" onclick="appendOperator('0')">0</button>
+                <button class="small-b" onclick="appendOperator('.')">.</button>
+                <button class="small-b" onclick="calculate()">=</button>
+                <button class="small-b" onclick="appendOperator('+')">+</button>
+            </div>
+        </div>
+    </section>
+    <script src="cal.js"></script>
+</body>
+</html>
